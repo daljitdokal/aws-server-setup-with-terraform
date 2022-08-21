@@ -9,7 +9,7 @@ Requirements:
 
 - AWS account setup
 - Windows or Linux machine with VSCode
-- Teraform CLI
+- Teraform package
 
 ## Step 2 - Create Project
 
