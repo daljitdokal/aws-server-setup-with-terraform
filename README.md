@@ -35,5 +35,12 @@ Run the folling command to test if its installed correctly:
 terraform -v
 ``` 
 
-## Step 2 - Create Project
+## Step 2 - Setup VSCode
+
+Install extentions:
+
+- Terraform
+- AWS Toolkit
+
+## Step 3 - 
 
