@@ -8,6 +8,7 @@ Requirements:
 - AWS account setup
 - Windows or Linux machine with VSCode
 
+
 ## Step 1 - Intall Terraform
 
 **Ubuntu:**
@@ -29,11 +30,12 @@ sudo apt update && sudo apt install terraform
 
 **Testing:**
 
-Run the folling command to test if its installed correctly:
+Run the following command to test if its installed correctly:
 
 ```bash
 terraform -v
 ``` 
+
 
 ## Step 2 - Setup VSCode
 
@@ -42,9 +44,11 @@ Install extentions:
 - Terraform
 - AWS Toolkit
 
+
 ## Step 3 - Read documentation for example provided via Terraform
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
 
 ## Step 4 - Create Project and Connect to AWS
 
@@ -83,5 +87,18 @@ provider "aws" {
 - Run command: `terraform init`.
 
 
+
+## Step 5 - Create ....
+TODO:
+
+
+
+## Step x - Teardown
+
+Run the following command to teardown all resources created within this project
+
+```bash
+terraform destroy -auto-approve
+``` 
 
 
