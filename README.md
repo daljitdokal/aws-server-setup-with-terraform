@@ -45,7 +45,7 @@ Install extentions:
 - AWS Toolkit
 
 
-## Step 3 - Read documentation for example provided via Terraform
+## Step 3 - Read documentation for example provided by Terraform
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
