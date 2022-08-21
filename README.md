@@ -29,7 +29,7 @@ sudo apt update && sudo apt install terraform
 
 **Testing:**
 
-Run the folling command to test if its inatll correcly:
+Run the folling command to test if its installed correctly:
 
 ```bash
 terraform -v
