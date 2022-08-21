@@ -42,5 +42,46 @@ Install extentions:
 - Terraform
 - AWS Toolkit
 
-## Step 3 - 
+## Step 3 - Read documentation for example provided via Terraform
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+## Step 4 - Create Project and Connect to AWS
+
+### Create AWS shared credentials in VScode
+
+- Press `Cntl+Shft+p` in VSCode and Select `AWS: Crete Credentials Profile`
+  - Enter `aws_access_key_id` and `aws_secret_access_key` (from your AWS account)
+  - Update default name to `USER NAME` of AWS account. 
+
+### Install and Configure AWS Provider
+
+Install and Configure AWS Provider:
+
+- Create new folder `Terraform` and open it in VSCode
+- Create new file `providers.tf` with following code
+
+```bash
+# Install AWS Provider
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+#  the AWS Provider
+provider "aws" {
+  region = "us-east-1"
+  shared_config_files      = ["~/.aws/config"]
+  shared_credentials_files = ["~/.aws/credentials"]
+  profile                  = "vscode"
+}
+``` 
+- Run command: `terraform init`.
+
+
+
 
