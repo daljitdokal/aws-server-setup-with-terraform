@@ -25,7 +25,7 @@ sudo apt update && sudo apt install terraform
 - Download latest version of Terraform - https://www.terraform.io/downloads
 - Unzip and Copy `terraform.exe`
 - Create new Folder in `C:\Terraform` and paste the file.
-- Edit `Environment variables` via adding new `Path` value in `System variables`
+- Edit `Environment variables` via adding new `Path` value as `C:\Terraform` in `System variables`
 
 **Testing:**
 
