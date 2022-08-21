@@ -48,13 +48,13 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 ## Step 4 - Create Project and Connect to AWS
 
-### Create AWS shared credentials in VScode
+#### Create AWS shared credentials in VScode
 
 - Press `Cntl+Shft+p` in VSCode and Select `AWS: Crete Credentials Profile`
   - Enter `aws_access_key_id` and `aws_secret_access_key` (from your AWS account)
   - Update default name to `USER NAME` of AWS account. 
 
-### Install and Configure AWS Provider
+#### Install and Configure AWS Provider
 
 Install and Configure AWS Provider:
 
