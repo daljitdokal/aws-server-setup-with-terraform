@@ -95,7 +95,16 @@ Please see:
 - `variables.tf`
 - `output.tf`
 
-## Step 5 - Apply and Create AWS Resources
+## Step 5 - Format and Validate
+
+Run the following commands:
+
+```bash
+terraform fmt
+terraform validate
+``` 
+
+## Step 6 - Create AWS Resources
 
 Run the following commands:
 
@@ -114,18 +123,7 @@ terraform apply -var "instance_name=devEC2Instance" -auto-approve
 # Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ``` 
 
-
-## Step 6 - Format and validate
-
-Run the following commands:
-
-```bash
-terraform fmt
-terraform validate
-``` 
-
-
-## Step x - Teardown
+## Step 7 - Teardown
 
 Run the following command to teardown all resources created within this project
 
