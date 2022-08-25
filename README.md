@@ -86,11 +86,43 @@ provider "aws" {
 ``` 
 - Run command: `terraform init`.
 
+#### Add required configration
+
+Please see:
+
+- `providers.tf`
+- `main.tf`
+- `variables.tf`
+- `output.tf`
+
+## Step 5 - Apply and Create AWS Resources
+
+Run the following commands:
+
+```bash
+# terraform apply
+terraform apply -auto-approve
+
+# Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+``` 
+
+or with custom name for EC2
+
+```bash
+terraform apply -var "instance_name=devEC2Instance" -auto-approve
+
+# Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+``` 
 
 
-## Step 5 - Create ....
-TODO:
+## Step 6 - Format and validate
 
+Run the following commands:
+
+```bash
+terraform fmt
+terraform validate
+``` 
 
 
 ## Step x - Teardown
@@ -99,6 +131,6 @@ Run the following command to teardown all resources created within this project
 
 ```bash
 terraform destroy -auto-approve
+
+# Destroy complete! Resources: 1 destroyed.
 ``` 
-
-
